@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería Santa Rita</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:wght@400;600&display=swap">
+  <style>
+    :root {
+      --amarillo: #f4c430;
+      --azul: #16325c;
+      --rojo: #c8352b;
+      --papel: #fff8e1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--amarillo);
+      color: var(--azul);
+      font: 400 1.125rem/1.65 Lora, Georgia, serif;
+    }
+    header {
+      background: var(--azul);
+      color: var(--amarillo);
+      padding: 48px 24px 40px;
+      text-align: center;
+      border-bottom: 8px solid var(--rojo);
+    }
+    h1 {
+      font: 400 clamp(2.4rem, 9vw, 4.5rem)/1.05 "Alfa Slab One", Georgia, serif;
+      margin: 0 0 12px;
+    }
+    header p { margin: 0; color: var(--papel); font-style: italic; }
+
+    main { max-width: 640px; margin: 0 auto; padding: 40px 24px 56px; }
+    h2 { font: 400 1.7rem "Alfa Slab One", Georgia, serif; margin: 44px 0 14px; }
+    h2:first-child { margin-top: 0; }
+    p { margin: 0 0 14px; }
+
+    ul.precios { list-style: none; margin: 0; padding: 0; background: var(--papel); border: 3px solid var(--azul); padding: 18px 22px; }
+    .precios li { display: flex; align-items: baseline; padding: 5px 0; }
+    .precios li::after { content: none; }
+    .precios .linea { flex: 1; border-bottom: 2px dotted var(--azul); margin: 0 8px; opacity: .5; }
+    .precios b { font-weight: 600; }
+    .nota { font-size: .95rem; margin-top: 10px; }
+
+    table { border-collapse: collapse; width: 100%; }
+    td { padding: 4px 0; }
+    td:last-child { text-align: right; }
+
+    a { color: var(--rojo); font-weight: 600; }
+    a:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+    footer { background: var(--azul); color: var(--papel); text-align: center; padding: 20px 24px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panadería Santa Rita</h1>
+    <p>Pan caliente desde las cinco de la mañana.</p>
+  </header>
+
+  <main>
+    <h2>Lo que sale del horno</h2>
+    <p>Todo se hace aquí mismo, todos los días. Cuando se acaba el pan de agua, se acaba; llegue temprano.</p>
+
+    <ul class="precios">
+      <li>Pan de agua (funda de 6)<span class="linea"></span><b>RD$ 60</b></li>
+      <li>Pan sobao<span class="linea"></span><b>RD$ 15</b></li>
+      <li>Pan de maíz<span class="linea"></span><b>RD$ 25</b></li>
+      <li>Catalina de coco<span class="linea"></span><b>RD$ 30</b></li>
+      <li>Quipe de carne<span class="linea"></span><b>RD$ 45</b></li>
+      <li>Pastelito de pollo<span class="linea"></span><b>RD$ 40</b></li>
+      <li>Bizcocho de vainilla (libra)<span class="linea"></span><b>RD$ 180</b></li>
+      <li>Café con leche<span class="linea"></span><b>RD$ 35</b></li>
+    </ul>
+    <p class="nota">Precios sujetos a cambio cuando sube la harina.</p>
+
+    <h2>Horario</h2>
+    <table>
+      <tr><td>Lunes a sábado</td><td>5:00 a. m. – 9:00 p. m.</td></tr>
+      <tr><td>Domingo</td><td>5:00 a. m. – 2:00 p. m.</td></tr>
+    </table>
+
+    <h2>Dónde estamos</h2>
+    <p>Calle Duarte #14, esquina Las Flores, Santo Domingo Este. Frente a la parada de la guagua, al lado de la farmacia.</p>
+    <p>Pedidos para cumpleaños y bautizos: escriba por <a href="https://wa.me/18095550123">WhatsApp al 809-555-0123</a> con dos días de anticipación.</p>
+  </main>
+
+  <footer>Panadería Santa Rita · Hecho por Robert Plaza Brito, práctica de ITLA</footer>
+</body>
+</html>
